@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema escolar</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>COLÉGIO MUNICIPAL DA CBX</h1>
+    <div id="container">
+        <h1>CALCULE SUA MÉDIA</h1>
+        <div id="form">
+            <input id="priUnidade" type="number" placeholder="'NOTA PRIMEIRA UNIDADE'">
+            <input id="segUnidade" type="number" placeholder="'NOTA SEGUNDA UNIDADE'">
+            <input id="terUnidade" type="number" placeholder="'NOTA TERCEIRA UNIDADE'">
+            <button id="botao" onclick="calcular()">Calcular média</button>
+        </div>
+    </div>
+
+    <div class="modal-container">
+        <div class="modal">
+            <h2>COLÉGIO MUNICIPAL DA CBX, INFORMA:</h2>
+            <hr>
+            <p id="result">teste</p>
+            <hr>
+            <div id="btns">
+                <button id="btnOk" onclick="closeModal()">OK</button>
+                <button id="btnClose" onclick="closeModal()">Fechar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/const.js"></script>
+</body>
+</html>

@@ -1,0 +1,120 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body{
+    background: url(../img/escolar.jpg);
+    background-size: contain;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+body h1{
+    font-size: 40px;
+    color: royalblue;
+}
+#container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: solid purple 1px;
+    width: 600px;
+    height: 300px;
+}
+#container h1{
+    font-size: 20px;
+    color: black;
+}
+#form{
+    background: royalblue;
+    width: 400px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 12px;
+}
+#form input{
+    padding: 5px;
+    width: 200px;
+    height: 30px;
+    border-radius: 7px;
+}
+#form button{
+    width: 100px;
+    height: 25px;
+    background: blue;
+    color: white;
+    border: none;
+    border-radius: 7px;
+}
+#form input:hover{
+    transform: scale(1.1);
+    transition: .3s;
+}
+#form button:hover{
+    transform: scale(1.1);
+    transition: .3s;
+    cursor: pointer;
+}
+.modal-container{
+    display: none;
+    width: 100vw;
+    position: fixed;
+    top: 30px;
+    z-index: 999;
+    justify-content: center;
+}
+.modal{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    background: purple;
+    color: white;
+    border-radius: 10px;
+    width: 58%;
+}
+.active{
+    display: flex;
+}
+.active .modal{
+    animation: modal .4s;
+}
+@keyframes modal {
+    from{
+        opacity: 0;
+        transform: translate3d(0, -60px, 0);
+    }
+    to{
+        opacity: 1;
+        transform: translate3d(0,0,0);
+    }
+}
+p{
+    margin: 10px auto;
+}
+#btns{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+#btns button{
+    font-size: medium;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    color:white;cursor: pointer;
+}
+#btnOk{
+    background: blue;
+}
+#btnClose{
+    background: brown;
+}
